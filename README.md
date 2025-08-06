@@ -1,0 +1,116 @@
+# WordPress Starter Theme
+
+A modern WordPress starter theme with Tailwind CSS, PostCSS, Composer, Laravel Mix, and WordPress Scripts integration.
+
+## Features
+
+- **Tailwind CSS 3**: Utility-first CSS framework for rapid UI development
+- **PostCSS**: Transform CSS with JavaScript plugins
+- **Composer**: PHP dependency management with autoloading
+- **Laravel Mix**: Webpack wrapper for simplified asset compilation
+- **WordPress Scripts**: Official WordPress development toolkit
+- **Block Editor Support**: Full support for Gutenberg blocks
+- **Security Enhancements**: Various security measures implemented
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+
+## Requirements
+
+- WordPress 6.7+
+- PHP 8.2+
+- Node.js 22+
+- Composer
+
+## Installation
+
+1. Clone this repository to your WordPress themes directory:
+   ```
+   cd wp-content/themes/
+   git clone https://github.com/boldib/starter-theme.git
+   ```
+
+2. Install PHP dependencies:
+   ```
+   cd starter-theme
+   composer install
+   ```
+
+3. Install Node.js dependencies:
+   ```
+   npm install
+   ```
+
+4. Build assets for development:
+   ```
+   npm start
+   ```
+
+5. Build assets for production:
+   ```
+   npm run build:production
+   ```
+
+6. Activate the theme in the WordPress admin panel.
+
+## Development
+
+### Directory Structure
+
+```
+starter-theme/
+├── build/                  # Compiled assets (generated)
+├── inc/                    # PHP includes
+│   ├── blocks.php          # Block registration
+│   ├── enqueue.php         # Script/style enqueuing
+│   ├── security.php        # Security enhancements
+│   └── theme-setup.php     # Theme setup and features
+├── parts/                  # Block template parts
+│   ├── header.html         # Header template part
+│   └── footer.html         # Footer template part
+├── src/                    # Source files
+│   ├── css/                # CSS/Tailwind source
+│   ├── js/                 # JavaScript source
+│   │   └── blocks/         # Custom Gutenberg blocks
+│   └── images/             # Source images
+├── template-parts/         # Template parts
+│   ├── content.php         # Default content template
+│   └── content-none.php    # No content found template
+├── composer.json           # Composer configuration
+├── functions.php           # Theme functions
+├── index.php               # Main template file
+├── package.json            # NPM configuration
+├── style.css               # Theme metadata
+├── tailwind.config.js      # Tailwind configuration
+├── theme.json              # Theme configuration
+├── webpack.mix.js          # Laravel Mix configuration
+└── versioning.php          # Theme version file
+```
+
+### Available Commands
+
+- `npm start`: Start development server with hot reloading
+- `npm run build`: Build assets for development
+- `npm run build:production`: Build assets for production
+- `npm run lint:css`: Lint CSS files
+- `npm run lint:js`: Lint JavaScript files
+- `npm run lint:pkg-json`: Lint package.json
+- `npm run format:js`: Format JavaScript files
+
+## Customization
+
+### Tailwind Configuration
+
+Edit `tailwind.config.js` to customize your Tailwind setup.
+
+### Adding Custom Blocks
+
+1. Create a new block in `src/js/blocks/`
+2. Import and register your block in `src/js/blocks/index.js`
+3. Run `npm start` to compile your changes
+
+### Adding PHP Functionality
+
+Add new PHP files to the `inc/` directory and include them in `composer.json` autoload section.
+
+## License
+
+This theme is licensed under the GPL-2.0+ license.

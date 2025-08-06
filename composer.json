@@ -1,0 +1,33 @@
+{
+    "name": "theme/wordpress-theme",
+    "description": "WordPress starter theme with Tailwind, PostCSS, Laravel Mix and WordPress Scripts",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Theme Author",
+            "email": "author@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Theme\\": "inc/"
+        },
+        "files": [
+            "inc/blocks.php",
+            "inc/enqueue.php",
+            "inc/security.php",
+            "inc/setup.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
