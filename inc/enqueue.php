@@ -16,7 +16,7 @@ function theme_enqueue_scripts() {
 	// Enqueue main stylesheet.
 	wp_enqueue_style(
 		'theme-style',
-		THEME_BUILD_URI . 'css/app.css',
+		THEME_BUILD_URI . 'app.css',
 		array(),
 		THEME_VERSION
 	);
@@ -40,7 +40,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 function theme_editor_styles() {
 	// Add editor styles with version for cache busting.
 	add_editor_style( array(
-		THEME_BUILD_URI . 'css/app.css'
+		THEME_BUILD_URI . 'app.css'
 	), null, null, THEME_VERSION );
 }
 add_action( 'admin_init', 'theme_editor_styles' );
