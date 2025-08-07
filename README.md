@@ -25,7 +25,7 @@ A modern WordPress starter theme with Tailwind CSS, PostCSS, Composer, Laravel M
 1. Clone this repository to your WordPress themes directory:
    ```
    cd wp-content/themes/
-   git clone https://github.com/boldib/starter-theme.git
+   git clone https://github.com/boldib/wordpress-starter-theme.git
    ```
 
 2. Install PHP dependencies:
