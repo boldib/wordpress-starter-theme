@@ -7,4 +7,6 @@
  * Will be overwritten during production build
  */
 
+abspath_check();
+
 define( 'THEME_VERSION', 'dev-' . time() );
