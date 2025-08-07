@@ -30,7 +30,6 @@ A modern WordPress starter theme with Tailwind CSS, PostCSS, Composer, Laravel M
 
 2. Install PHP dependencies:
    ```
-   cd starter-theme
    composer install
    ```
 
