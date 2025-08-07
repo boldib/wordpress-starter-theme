@@ -8,7 +8,11 @@ module.exports = {
     './templates/**/*.{html,php}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'md': '782px',
+      },
+    },
   },
   plugins: [],
 }
