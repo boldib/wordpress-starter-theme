@@ -91,10 +91,6 @@ starter-theme/
 │   ├── header.html         # Header template part
 │   └── footer.html         # Footer template part
 ├── src/                    # Source files
-│   ├── css/                # CSS/Tailwind source
-│   ├── js/                 # JavaScript source
-│   │   └── blocks/         # Custom Gutenberg blocks
-│   └── images/             # Source images
 ├── template-parts/         # Template parts
 │   ├── content.php         # Default content template
 │   └── content-none.php    # No content found template
