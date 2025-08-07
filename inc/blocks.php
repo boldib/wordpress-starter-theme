@@ -132,7 +132,7 @@ function register_cached_blocks( $blocks_data ) {
 function theme_enqueue_block_assets() {
 	wp_enqueue_style(
 		'tailwind',
-		get_template_directory_uri() . '/build/css/main.css',
+		get_template_directory_uri() . '/build/app.css',
 		array(),
 		THEME_VERSION
 	);
