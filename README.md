@@ -109,32 +109,12 @@ starter-theme/
 └── versioning.php          # Theme version file
 ```
 
-### Available Commands
-
-- `npm start`: Start development server with hot reloading
-- `npm run build`: Build assets for development
-- `npm run build:production`: Build assets for production
-- `npm run lint:css`: Lint CSS files
-- `npm run lint:js`: Lint JavaScript files
-- `npm run lint:pkg-json`: Lint package.json
-- `npm run format:js`: Format JavaScript files
-
 ## Customization
 
 ### Tailwind Configuration
 
 Edit `tailwind.config.js` to customize your Tailwind setup.
 
-### Adding Custom Blocks
-
-1. Create a new block in `src/js/blocks/`
-2. Import and register your block in `src/js/blocks/index.js`
-3. Run `npm start` to compile your changes
-
 ### Adding PHP Functionality
 
 Add new PHP files to the `inc/` directory and include them in `composer.json` autoload section.
-
-## License
-
-This theme is licensed under the GPL-2.0+ license.
