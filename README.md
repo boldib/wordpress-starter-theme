@@ -39,15 +39,39 @@ A modern WordPress starter theme with Tailwind CSS, PostCSS, Composer, Laravel M
    npm install
    ```
 
-4. Build assets for development:
-   ```
-   npm start
-   ```
+## Available Commands
 
-5. Build assets for production:
-   ```
-   npm run build:production
-   ```
+```bash
+# Start development server with hot reloading (both assets and blocks)
+npm start
+
+# Start block development only
+npm run start:blocks
+
+# Watch for changes in assets only
+npm run watch
+
+# Build assets and blocks for development
+npm run build
+
+# Build assets and blocks for production
+npm run build:production
+
+# Build blocks only
+npm run build:blocks
+
+# Lint CSS
+npm run lint:css
+
+# Lint JavaScript
+npm run lint:js
+
+# Lint package.json
+npm run lint:pkg-json
+
+# Format JavaScript
+npm run format:js
+```
 
 6. Activate the theme in the WordPress admin panel.
 
