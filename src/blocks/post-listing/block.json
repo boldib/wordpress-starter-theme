@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "theme/post-listing",
+	"version": "0.1.0",
+	"title": "Post Listing",
+	"category": "theme-blocks",
+	"icon": "admin-site",
+	"description": "Display posts filtered by categories and/or tags with customizable options",
+	"example": {},
+	"attributes": {
+		"categories": {
+			"type": "array",
+			"default": []
+		},
+		"tags": {
+			"type": "string",
+			"default": ""
+		},
+		"postsPerPage": {
+			"type": "number",
+			"default": 6
+		},
+		"enablePagination": {
+			"type": "boolean",
+			"default": false
+		},
+		"desktopPostsPerRow": {
+			"type": "number",
+			"default": 3
+		},
+		"mobilePostsPerRow": {
+			"type": "number",
+			"default": 1
+		},
+		"showExcerpt": {
+			"type": "boolean",
+			"default": true
+		},
+		"showFeaturedImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"showDate": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "post-listing",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
