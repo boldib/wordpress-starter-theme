@@ -45,7 +45,7 @@ if ( file_exists( $autoload_file ) ) {
 		</div>
 		<?php
 	} );
-	// Also keep admin notice
+	// Admin notice
 	add_action( 'admin_notices', function () {
 		?>
 		<div class="notice notice-error">
